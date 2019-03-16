@@ -51,7 +51,7 @@ class PieChartView: UIView {
             plotChart(fromAngle: fromAngle, toAngle: toAngle, color: slice.color)
             fromAngle = toAngle
         }
-        plotChart(fromAngle: fromAngle, toAngle: -CGFloat(Double.pi * 0.5), color: pieData.remainingColor)
+        plotChart(fromAngle: fromAngle, toAngle: CGFloat(Double.pi * 1.5), color: pieData.remainingColor)
     }
     
     func plotChart(fromAngle: CGFloat, toAngle: CGFloat, color: UIColor) {
